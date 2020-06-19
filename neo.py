@@ -77,7 +77,7 @@ class LookupModule(LookupBase):
         select_value = terms[1] # used to create subset selection of data (items)
         filter_value = terms[2] # used to return a value from the data subset
 
-		# first term should be a list (or dict), second a string holding the select value, third a string holding a filter value
+	# first term should be a list (or dict), second a string holding the select value, third a string holding a filter value
         if not isinstance(items, (list, dict)) or not isinstance(select_value, string_types) or not isinstance(filter_value, string_types):
             _raise_terms_error("")
 
