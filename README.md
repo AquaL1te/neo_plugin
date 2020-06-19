@@ -13,7 +13,7 @@ vars:
       role: captain
 ```
 
-Below is a lookup chained to return a value, the same is done by the task below it, but then simplified with my plugin. By default my lookup plugins uses 'name' to filter out a subset from the data.
+Below is a lookup chained to return a value, the same is done by the task below it, but then simplified with my plugin. By default my lookup plugin uses 'name' to filter out a subset from the data.
 
 `"{{ people | selectattr('name', '==', 'jdoe') | map(attribute='role') | first }}"`
 
