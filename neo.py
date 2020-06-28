@@ -79,7 +79,7 @@ class LookupModule(LookupBase):
 
 	# first term should be a list (or dict), second a string holding the select value, third a string holding a filter value
         if not isinstance(items, (list, dict)) or not isinstance(select_value, string_types) or not isinstance(filter_value, string_types):
-            _raise_terms_error("")
+            _raise_terms_error()
 
         flags = {}
         if len(terms) == 4:
